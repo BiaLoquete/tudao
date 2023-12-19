@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Pessoa = {
+            Nome: "Marcelo",
+            Idade: 36,
+            Profissao: "Empresário",
+
+            
+
+            //esses são os métodos
+            apr(Pessoa){
+                return "Olá, meu nome é " + this.Nome +", eu tenho " + this.Idade + " anos e sou um " + this.Profissao 
+            },
+
+            endereco: {
+                rua: "José Estrada",
+                cidade: "Birigui",
+                estado: "São Paulo"
+            },
+
+            ende(endereco){
+                return "Moro na rua " + this.endereco.rua + ", na cidade " + this.endereco.cidade + " - " + this.endereco.estado + ""
+            }
+                
+        
+        }
+
+    </script>
+</body>
+</html>

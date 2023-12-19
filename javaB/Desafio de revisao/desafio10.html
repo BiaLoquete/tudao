@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        lista = []
+        const p1 = {
+            nome: "Bianca",
+            idade: 16
+        }
+        const p2 = {
+            nome: "Gigi",
+            idade: 16
+        }
+        const p3 = {
+            nome: "Agatha",
+            idade: 17
+        }
+        const p4 = {
+            nome: "Saritah",
+            idade: 16
+        }
+        lista.push(p1)
+        lista.push(p2)
+        lista.push(p3)
+        lista.push(p4)
+
+        function mv(a) {
+            var mv = ""
+            var maioridade = 0
+
+            for (item of lista) {
+                if (item.idade > maioridade) {
+                    mv = item.nome
+                    maioridade = item.idade
+                }
+            }
+            return mv
+        }
+
+        console.log(mv(lista))
+    </script>
+</body>
+</html>

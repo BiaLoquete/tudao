@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="botao">Clique aqui</button>
+    <script>
+
+        //precisa buscar meu botao em todo o html
+        //getelementbyid serve para eu avisar que ele precisa procurar um elemento pelo id + o nome desse id
+        var botao = document.getElementById("botao")
+
+        //criar a função para o botão realizar
+        function exibirAlerta(){
+            alert("Clicou")
+        }
+
+        //para ele ficar escutando esse id, é preciso colocar o nome do id e o add
+        // quando acontecer a ação do click, faça a função que está ali em cima
+        //para avisar que é uma função de callback, não pode escrever exibirAlerta()
+        botao.addEventListener("click", exibirAlerta)
+
+    </script>
+</body>
+</html>

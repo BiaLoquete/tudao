@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    <script>
+        //criar primeiro a lista
+        //o 1 é a posição 0, pq começa no 0
+        var lista = [1,7,3,9,10,24,22,15,13,90,12,9,34,67]
+
+        //criar uma lista pares vazia e coloque um programa para ver se é par
+        var pares = []
+
+
+
+        //fazer um for para verificar se é par
+        //index é por onde ele vai começar a rodar
+        //tem que colocar indice+1 ou indice++, para ele ir aumentando um a cada volta que dá
+        //indice < lista.length: se o número for menor que o 14, ele exibe. se for o 14, ele para e vai para a próxima
+        for(var indice = 0; indice < lista.length; indice = indice+1){
+
+            //quando dividir o número por 2, se teve resto, é ímpar)
+            var resto = lista[indice] % 2
+
+            //se meu resto for igual a 0, ele é um número par. 
+            if(resto == 0){
+                //Mas precisa pegar o número da lista, não a posição
+                pares.push(lista[indice])
+            }
+        }
+
+        //para mostrar no inspecionar-console
+        console.log(lista)
+        console.log(pares)
+    </script>
+</body>
+</html>
